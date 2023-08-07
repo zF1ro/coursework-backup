@@ -1,0 +1,125 @@
+[
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "urlencode",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "vk_token",
+        "importPath": "vk_token",
+        "description": "vk_token",
+        "isExtraImport": true,
+        "detail": "vk_token",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "APP_ID",
+        "kind": 5,
+        "importPath": "git-ignore.get-token",
+        "description": "git-ignore.get-token",
+        "peekOfCode": "APP_ID = 51721514\nOAUTH_BASE_URL = \"https://oauth.vk.com/authorize\"\nparams = {\n    'client_id': APP_ID,\n    'redirect_uri': 'https://oauth.vk.com/blank.html',\n    'display': 'page',\n    'scope': 'photos',\n    'response_type': 'token',\n    'v' : 5.131\n}",
+        "detail": "git-ignore.get-token",
+        "documentation": {}
+    },
+    {
+        "label": "OAUTH_BASE_URL",
+        "kind": 5,
+        "importPath": "git-ignore.get-token",
+        "description": "git-ignore.get-token",
+        "peekOfCode": "OAUTH_BASE_URL = \"https://oauth.vk.com/authorize\"\nparams = {\n    'client_id': APP_ID,\n    'redirect_uri': 'https://oauth.vk.com/blank.html',\n    'display': 'page',\n    'scope': 'photos',\n    'response_type': 'token',\n    'v' : 5.131\n}\noauth_url = f'{OAUTH_BASE_URL}?{urlencode(params)}'",
+        "detail": "git-ignore.get-token",
+        "documentation": {}
+    },
+    {
+        "label": "params",
+        "kind": 5,
+        "importPath": "git-ignore.get-token",
+        "description": "git-ignore.get-token",
+        "peekOfCode": "params = {\n    'client_id': APP_ID,\n    'redirect_uri': 'https://oauth.vk.com/blank.html',\n    'display': 'page',\n    'scope': 'photos',\n    'response_type': 'token',\n    'v' : 5.131\n}\noauth_url = f'{OAUTH_BASE_URL}?{urlencode(params)}'\nprint(oauth_url)",
+        "detail": "git-ignore.get-token",
+        "documentation": {}
+    },
+    {
+        "label": "oauth_url",
+        "kind": 5,
+        "importPath": "git-ignore.get-token",
+        "description": "git-ignore.get-token",
+        "peekOfCode": "oauth_url = f'{OAUTH_BASE_URL}?{urlencode(params)}'\nprint(oauth_url)\n#https://oauth.vk.com/blank.html#access_token=vk1.a.43BaJOTQfhTCcnxA9_Kf-zo7PfBHQ3L6MKIYMwKNAGfa868dIlZbDcZ0FXtkgp9jgQ0J_bkOcrNA8QyELGIPviuZ9tbyTd3BdlsOsiRywuDAF5FxzGfEsRmD6-ft-uI4EWu_sdxQVdCZrilcBgWqU9TqxE0CTmL0i4FJygrFC2hsocvsWUlOOb13mDPqsstr&expires_in=86400&user_id=640426005",
+        "detail": "git-ignore.get-token",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "git-ignore.thief-side",
+        "description": "git-ignore.thief-side",
+        "peekOfCode": "def main():\n    class VkDownloader:\n        def __init__(self, token):\n            self.token = token\n        def get_photos(self, offset=0, count=50):\n            url = 'https://api.vk.com/method/photos.get'\n            params = {'owner_id': user_id,\n                      'album_id': 'profile',\n                      'access_token': vk_token,\n                      'v': '5.131',",
+        "detail": "git-ignore.thief-side",
+        "documentation": {}
+    },
+    {
+        "label": "VkDownloader",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class VkDownloader:\n    def __init__(self, token):\n        self.token = token\n    def get_photos(self):\n        url = 'https://api.vk.com/method/photos.get'\n        params = {\n                    'owner_id': USER_ID,\n                    'album_id': 'profile',\n                    'access_token': self.token,\n                    'v': 5.131,",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "APP_ID",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "APP_ID = 51721514\nUSER_ID = 640426005\nclass VkDownloader:\n    def __init__(self, token):\n        self.token = token\n    def get_photos(self):\n        url = 'https://api.vk.com/method/photos.get'\n        params = {\n                    'owner_id': USER_ID,\n                    'album_id': 'profile',",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "USER_ID",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "USER_ID = 640426005\nclass VkDownloader:\n    def __init__(self, token):\n        self.token = token\n    def get_photos(self):\n        url = 'https://api.vk.com/method/photos.get'\n        params = {\n                    'owner_id': USER_ID,\n                    'album_id': 'profile',\n                    'access_token': self.token,",
+        "detail": "main",
+        "documentation": {}
+    }
+]
