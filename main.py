@@ -1,6 +1,7 @@
 import requests
 import os
 import json
+import datetime
 from pprint import pprint
 
 
@@ -34,5 +35,17 @@ class VkDownloader:
 
 if __name__ == '__main__':
     main = VkDownloader(TOKEN)
+    #Скачиваем информацию о фотографиях профиля
     with open('images_vk.json', 'w') as f:
         json.dump(main.get_photos(), f)
+        print('Done with downloading photos information from vk') 
+    
+    vk_photos_info_json = main.get_photos()
+
+    vk_photos_info = {}
+
+    for id_numb, photo in enumerate(vk_photos_info_json['response']['items']):
+        vk_photos_info[id_numb] = id_numb
+
+
+    pprint(vk_photos_info)

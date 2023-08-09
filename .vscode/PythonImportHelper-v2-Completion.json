@@ -43,6 +43,15 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "pprint",
         "importPath": "pprint",
         "description": "pprint",
@@ -82,7 +91,7 @@
         "kind": 5,
         "importPath": "git-ignore.get-token",
         "description": "git-ignore.get-token",
-        "peekOfCode": "oauth_url = f'{OAUTH_BASE_URL}?{urlencode(params)}'\nprint(oauth_url)\n#https://oauth.vk.com/blank.html#access_token=vk1.a.43BaJOTQfhTCcnxA9_Kf-zo7PfBHQ3L6MKIYMwKNAGfa868dIlZbDcZ0FXtkgp9jgQ0J_bkOcrNA8QyELGIPviuZ9tbyTd3BdlsOsiRywuDAF5FxzGfEsRmD6-ft-uI4EWu_sdxQVdCZrilcBgWqU9TqxE0CTmL0i4FJygrFC2hsocvsWUlOOb13mDPqsstr&expires_in=86400&user_id=640426005",
+        "peekOfCode": "oauth_url = f'{OAUTH_BASE_URL}?{urlencode(params)}'\nprint(oauth_url)",
         "detail": "git-ignore.get-token",
         "documentation": {}
     },
@@ -93,6 +102,24 @@
         "description": "git-ignore.thief-side",
         "peekOfCode": "def main():\n    class VkDownloader:\n        def __init__(self, token):\n            self.token = token\n        def get_photos(self, offset=0, count=50):\n            url = 'https://api.vk.com/method/photos.get'\n            params = {'owner_id': user_id,\n                      'album_id': 'profile',\n                      'access_token': vk_token,\n                      'v': '5.131',",
         "detail": "git-ignore.thief-side",
+        "documentation": {}
+    },
+    {
+        "label": "unix_time",
+        "kind": 5,
+        "importPath": "data_time",
+        "description": "data_time",
+        "peekOfCode": "unix_time = 1691089993\ndate_time = datetime.datetime.fromtimestamp(unix_time)\n# print unix time stamp\nprint(\"Unix_Time =>\",unix_time)\n# displaying date and time in a regular\n# string format\nprint(\"Date & Time =>\" ,\n      datetime.datetime.fromtimestamp(unix_time).strftime('%Y-%m-%d %H:%M:%S'))",
+        "detail": "data_time",
+        "documentation": {}
+    },
+    {
+        "label": "date_time",
+        "kind": 5,
+        "importPath": "data_time",
+        "description": "data_time",
+        "peekOfCode": "date_time = datetime.datetime.fromtimestamp(unix_time)\n# print unix time stamp\nprint(\"Unix_Time =>\",unix_time)\n# displaying date and time in a regular\n# string format\nprint(\"Date & Time =>\" ,\n      datetime.datetime.fromtimestamp(unix_time).strftime('%Y-%m-%d %H:%M:%S'))",
+        "detail": "data_time",
         "documentation": {}
     },
     {
@@ -120,6 +147,15 @@
         "description": "main",
         "peekOfCode": "USER_ID = 640426005\nclass VkDownloader:\n    def __init__(self, token):\n        self.token = token\n    def get_photos(self):\n        url = 'https://api.vk.com/method/photos.get'\n        params = {\n                    'owner_id': USER_ID,\n                    'album_id': 'profile',\n                    'access_token': self.token,",
         "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "thief",
+        "description": "thief",
+        "peekOfCode": "def main():\n    class VkDownloader:\n        def __init__(self, token):\n            self.token = token\n        def get_photos(self, offset=0, count=50):\n            url = 'https://api.vk.com/method/photos.get'\n            params = {'owner_id': user_id,\n                      'album_id': 'profile',\n                      'access_token': vk_token,\n                      'v': '5.131',",
+        "detail": "thief",
         "documentation": {}
     }
 ]
