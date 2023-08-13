@@ -1,0 +1,108 @@
+[
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "urlencode",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "APP_ID",
+        "kind": 5,
+        "importPath": "get-vk-token",
+        "description": "get-vk-token",
+        "peekOfCode": "APP_ID = input('Введите id приложения VK: ')\nOAUTH_BASE_URL = \"https://oauth.vk.com/authorize\"\nparams = {\n    'client_id': APP_ID,\n    'redirect_uri': 'https://oauth.vk.com/blank.html',\n    'display': 'page',\n    'scope': 'photos',\n    'response_type': 'token',\n    'v' : 5.131\n}",
+        "detail": "get-vk-token",
+        "documentation": {}
+    },
+    {
+        "label": "OAUTH_BASE_URL",
+        "kind": 5,
+        "importPath": "get-vk-token",
+        "description": "get-vk-token",
+        "peekOfCode": "OAUTH_BASE_URL = \"https://oauth.vk.com/authorize\"\nparams = {\n    'client_id': APP_ID,\n    'redirect_uri': 'https://oauth.vk.com/blank.html',\n    'display': 'page',\n    'scope': 'photos',\n    'response_type': 'token',\n    'v' : 5.131\n}\noauth_url = f'{OAUTH_BASE_URL}?{urlencode(params)}'",
+        "detail": "get-vk-token",
+        "documentation": {}
+    },
+    {
+        "label": "params",
+        "kind": 5,
+        "importPath": "get-vk-token",
+        "description": "get-vk-token",
+        "peekOfCode": "params = {\n    'client_id': APP_ID,\n    'redirect_uri': 'https://oauth.vk.com/blank.html',\n    'display': 'page',\n    'scope': 'photos',\n    'response_type': 'token',\n    'v' : 5.131\n}\noauth_url = f'{OAUTH_BASE_URL}?{urlencode(params)}'\nprint(oauth_url)",
+        "detail": "get-vk-token",
+        "documentation": {}
+    },
+    {
+        "label": "oauth_url",
+        "kind": 5,
+        "importPath": "get-vk-token",
+        "description": "get-vk-token",
+        "peekOfCode": "oauth_url = f'{OAUTH_BASE_URL}?{urlencode(params)}'\nprint(oauth_url)",
+        "detail": "get-vk-token",
+        "documentation": {}
+    },
+    {
+        "label": "VkDownloader",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class VkDownloader:\n    def __init__(self, token, vk_id):\n        self.token = token\n        self.vk_id = vk_id\n    def get_avatars(self):\n        url = 'https://api.vk.com/method/photos.get'\n        params = {\n                    'owner_id': self.vk_id,\n                    'album_id': 'profile',\n                    'access_token': self.token,",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "YandexUploader",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class YandexUploader:\n    def __init__(self, token:str):\n        self.token = token\n    def folder_create(self):\n        url = f\"https://cloud-api.yandex.net/v1/disk/resources\"\n        headers = {\n            \"Content-Type\": \"application/json\",\n            \"Authorization\": f\"OAuth {ya_token}\"\n        }\n        params = {",
+        "detail": "main",
+        "documentation": {}
+    }
+]

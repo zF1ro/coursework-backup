@@ -2,7 +2,7 @@ import requests
 import json
 from urllib.parse import urlencode
 
-APP_ID = 51721514
+APP_ID = input('Введите id приложения VK: ')
 OAUTH_BASE_URL = "https://oauth.vk.com/authorize"
 
 params = {
